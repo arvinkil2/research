@@ -36,8 +36,8 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 .download{margin:22px 0 0;font-family:var(--caps);font-size:15px;font-variant-caps:small-caps;letter-spacing:.035em}
 .record .note{margin:18px 0 0;max-width:68ch;font-size:15px;line-height:1.55;color:var(--muted)}
 .record .note em{font-style:italic}
-.label{margin:34px 0 8px;font-size:14px;font-weight:400;font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em}
-.abstract{max-width:72ch;margin:0;text-wrap:pretty}
+.label{margin:54px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line);font-size:15px;font-weight:400;font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em}
+.abstract{max-width:72ch;margin:0 0 16px;text-wrap:pretty}
 .metadata{margin-top:27px;padding-top:16px;border-top:1px solid var(--line)}
 .metadata p{margin:2px 0;color:var(--muted);font-size:15px;line-height:1.48}
 .metadata strong{color:var(--ink)}
@@ -47,8 +47,9 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 .site-footer p{margin:5px 0}
 @media(max-width:860px){.row{grid-template-columns:minmax(0,1fr);gap:10px;padding:22px 0}.row-side{text-align:left}.row-meta{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}.row-meta .number,.row-meta .date,.row-meta .byline{margin:0}}
 @media(max-width:680px){body{font-size:17px}.page{width:calc(100% - 40px)}.record{width:calc(100% - 40px)}.site-header{flex-wrap:wrap}.intro h1{font-size:32px}.lede{font-size:17.5px}.excerpt{font-size:16px}.site-nav a{padding:12px 0}}
-.fig{margin:28px 0;max-width:880px}.fig img{width:100%;height:auto;display:block;border:1px solid var(--line)}.figcap{margin:10px 0 0;max-width:72ch;color:var(--muted);font-size:15px;line-height:1.5}.abstract strong{color:var(--ink)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:24px 0}.card{border:1px solid var(--line);padding:16px 18px}.card .num{margin:0;font-size:30px;font-weight:400;letter-spacing:-.01em}.card .lbl{margin:8px 0 0;font-size:13px;color:var(--muted);font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em;line-height:1.5}table.datatable{width:100%;border-collapse:collapse;margin:24px 0;font-size:15.5px;line-height:1.5}table.datatable th{font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em;font-size:13px;text-align:left;padding:10px 12px;border-bottom:1px solid var(--ink)}table.datatable td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}table.datatable tr td:first-child{white-space:nowrap}@media(max-width:680px){table.datatable{display:block;overflow-x:auto}.card .num{font-size:26px}}@media print{@page{margin:18mm}:root{--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--link:#000}.page,.record{width:100%}.site-header,.site-nav,.download{display:none}}
+.fig{margin:28px 0;max-width:880px}.fig img{width:100%;height:auto;display:block;border:1px solid var(--line)}.figcap{margin:10px 0 0;max-width:72ch;color:var(--muted);font-size:15px;line-height:1.5}.abstract strong{color:var(--ink)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:24px 0}.card{border:1px solid var(--line);padding:16px 18px}.card .num{margin:0;font-size:30px;font-weight:400;letter-spacing:-.01em}.card .lbl{margin:8px 0 0;font-size:13px;color:var(--muted);font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em;line-height:1.5}table.datatable{width:100%;border-collapse:collapse;margin:24px 0;font-size:15.5px;line-height:1.5}table.datatable th{font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em;font-size:13px;text-align:left;padding:10px 12px;border-bottom:1px solid var(--ink)}table.datatable td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}table.datatable tr td:first-child{white-space:normal}@media(max-width:680px){.card .num{font-size:26px}}h3.sub{margin:32px 0 10px;font-size:20px;font-weight:400;letter-spacing:-.01em;max-width:72ch}.callout{border:1px solid var(--line);border-left:3px solid var(--ink);padding:14px 20px;margin:26px 0;max-width:78ch}.callout p{margin:8px 0;font-size:16px;line-height:1.55}.callout .ct{margin:0 0 8px;font-family:var(--caps);font-variant-caps:small-caps;letter-spacing:.045em;font-size:13px;color:var(--muted)}ol.takeaways{max-width:72ch;margin:2px 0 18px;padding-left:26px}ol.takeaways li{margin:0 0 12px;line-height:1.55;font-size:17px}.tablewrap{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}table.datatable{margin:0;min-width:640px}@media(max-width:680px){.cards{grid-template-columns:1fr 1fr;gap:10px}.card{padding:12px 14px}.card .num{font-size:23px}.card .lbl{font-size:12px}h3.sub{font-size:18px;margin:26px 0 8px}ol.takeaways li{font-size:16px}.callout{padding:12px 16px}}@media print{@page{margin:18mm}:root{--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--link:#000}.page,.record{width:100%}.site-header,.site-nav,.download{display:none}}
 </style></head><body><header class="site-header page"><a class="brand" href="./">Kilambi Research</a><nav class="site-nav"><a href="./">Working papers</a><a href="market-research.html">Market research</a></nav></header><main class="record">
+<main class="record">
 
 <p class="number">Research program</p>
 <h1>AI Infrastructure Leverage Monitor</h1>
@@ -58,10 +59,8 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 <p class="note"><em>These reports were produced with AI assistance. The ideas, hypotheses, and analysis are the author&rsquo;s own; AI tools were used to carry out the quantitative work and prepare the manuscripts.</em></p>
 
 <h2 class="label">Executive summary</h2>
-<p class="abstract">The weekly vintage adds about $10.2B of newly recorded primary credit, against a primary committed base of $4,292.3B carried from the baseline. Of the new amount, $6.5B was issued inside the 25&ndash;28 September window and $3.7B is a baseline revision. The in-window issuance: Nscale&rsquo;s $3.36B pre-IPO convertible-note financing (announced 25 Sep) and CleanSpark&rsquo;s $2.276B senior secured notes (closed 25 Sep, verified in the 8-K body), backed by a 20-year, $6.6B contracted triple-net lease to Anviran, a Meta subsidiary (press-reported; not in the 8-K). Fitch assigned expected ratings to $840M of Switch ABS notes on 24 September, pre-pricing. The revision: CoreWeave&rsquo;s upsized $3.7B 2.875% converts due 2033, settled 22 September, which the baseline missed; recorded this vintage as a new row, not a restatement of history. No new 10-Q, 10-K, 8-K, or 424B debt filing appeared from any of the 19 scanned filers in the window.</p>
-<p class="abstract"><strong>Key takeaways.</strong> First, the week&rsquo;s new credit was originated and placed outside the banking system: private-credit and sovereign capital (Nscale), 144A institutional placement (CleanSpark), expected ABS (Switch). Bank capital metrics and BDC positions are unchanged. Second, CleanSpark&rsquo;s financing is the customer-backed project-finance pattern in a single deal: Meta-subsidiary credit underwrites third-party construction debt, with DSCR-shaped amortization and a parent completion guarantee. Third, Nscale&rsquo;s $3.36B converts are benign if the IPO completes; if not, undisclosed fallback terms decide between a maturity wall and a renegotiation. Fourth, the first contractual escape hatch in the dataset was used: Oracle&rsquo;s force majeure notice on the 2.45 GW Project Jupiter campus, with project loans quoted below face value in September.</p>
-<p class="abstract">The verdict from Issue 1 stands and tightens: economic leverage exceeds headline debt, the excess is disclosed rather than hidden, and the first place a commitment gets renegotiated rather than paid is a project-finance structure, not a corporate bond.</p>
-<p class="abstract"><em>Scope.</em> This program measures the debt, credit, leverage, contractual obligations and off-balance-sheet financing supporting the global AI infrastructure boom. Every major number cites its primary document. Company disclosures are separated from researcher calculations. Unknown exposure is reported as unknown. The baseline (Issue 1, vintage 27 September 2026) carries all standing definitions; this issue reports what changed and what the change implies. Data as of 25 September 2026 unless stated.</p>
+<div class="callout"><p class="ct">Verdict</p><p>Economic leverage exceeds headline debt. The excess is disclosed rather than hidden. And the first place a commitment gets renegotiated rather than paid is a project-finance structure, not a corporate bond. The verdict from Issue 1 stands and tightens.</p></div>
+<p class="abstract">The weekly vintage adds about $10.2B of newly recorded primary credit, against a primary committed base of $4,292.3B carried from the baseline: $6.5B issued inside the 25&ndash;28 September window, plus a $3.7B baseline revision. In-window: Nscale&rsquo;s $3.36B pre-IPO converts (announced 25 Sep) and CleanSpark&rsquo;s $2.276B 7.875% senior secured notes (closed 25 Sep, 8-K verified), backed by a 20-year, $6.6B triple-net lease to Anviran, a Meta subsidiary. Fitch assigned expected ratings to $840M of Switch ABS notes (24 Sep, pre-pricing). The revision: CoreWeave&rsquo;s upsized $3.7B 2.875% converts due 2033 (settled 22 Sep), missed by the baseline. No new 10-Q, 10-K, 8-K or 424B debt filing from any of the 19 scanned filers in the window.</p>
 
 <div class="cards">
 <div class="card"><p class="num">$4,302.5B</p><p class="lbl">Primary committed credit (vintage 2026-09-28)</p></div>
@@ -70,11 +69,20 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 <div class="card"><p class="num">96</p><p class="lbl">Obligations tracked (63 primary, 33 memo)</p></div>
 </div>
 
-<p class="abstract">This program measures the debt, credit, leverage, contractual obligations and off-balance-sheet financing supporting the global AI infrastructure boom. Every major number cites its primary document. Company disclosures are separated from researcher calculations. Unknown exposure is reported as unknown. The baseline (Issue 1, vintage 27 September 2026) carries all standing definitions; this issue reports what changed and what the change implies. Data as of 25 September 2026 unless stated.</p>
+
+
+<h3 class="sub">Key takeaways</h3>
+<ol class="takeaways">
+<li>The week&rsquo;s new credit was originated and placed outside the banking system: private-credit and sovereign capital (Nscale), 144A institutional placement (CleanSpark), expected ABS (Switch). Bank capital metrics and BDC positions are unchanged.</li>
+<li>CleanSpark&rsquo;s financing is the customer-backed project-finance pattern in a single deal: Meta-subsidiary credit underwrites third-party construction debt, with DSCR-shaped amortization and a parent completion guarantee.</li>
+<li>Nscale&rsquo;s $3.36B converts are benign if the IPO completes; if not, undisclosed fallback terms decide between a maturity wall and a renegotiation.</li>
+<li>The first contractual escape hatch in the dataset was used: Oracle&rsquo;s force majeure notice on the 2.45 GW Project Jupiter campus, with project loans quoted below face value in September.</li>
+</ol>
+<p class="abstract scope"><em>Scope.</em> This program measures the debt, credit, leverage, contractual obligations and off-balance-sheet financing supporting the global AI infrastructure boom. Every major number cites its primary document. Company disclosures are separated from researcher calculations. Unknown exposure is reported as unknown. The baseline (Issue 1, vintage 27 September 2026) carries all standing definitions; this issue reports what changed and what the change implies. Data as of 25 September 2026 unless stated.</p>
 
 <h2 class="label">What changed this week</h2>
 <figure class="fig"><img src="reports/leverage-figs/fig_new_issuance.png" alt="New credit recorded in this vintage: in-window issuance plus the CoreWeave baseline revision" loading="lazy"><figcaption class="figcap">New credit recorded in this vintage: $6.5B issued in-window plus a $3.7B CoreWeave baseline revision.</figcaption></figure>
-<table class="datatable">
+<div class="tablewrap"><table class="datatable">
 <tr><th>Item</th><th>Amount</th><th>Terms</th><th>Source</th></tr>
 <tr><td>Nscale convertible notes (announced 25 Sep)</td><td>$3.36B</td><td>$2.36B at close; $1B from Nvidia mid-Nov; auto-converts on IPO</td><td>Press</td></tr>
 <tr><td>CleanSpark senior secured notes (closed 25 Sep)</td><td>$2.276B</td><td>7.875% fixed, due 2031, issued at 98.5%; DSCR-shaped amortization</td><td>8-K filed</td></tr>
@@ -84,9 +92,9 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 <tr><td>Oracle / Project Jupiter force majeure (24 Sep)</td><td>Undisclosed</td><td>Payment delay sought if 2028 target missed; loans quoted below face</td><td>Bloomberg via Reuters</td></tr>
 <tr><td>EDGAR scan, 19 filers, 25&ndash;28 Sep</td><td>&mdash;</td><td>Zero new debt filings</td><td>EDGAR</td></tr>
 <tr><td>Rating agencies</td><td>&mdash;</td><td>No actions on the cohort</td><td>Agencies</td></tr>
-</table>
+</table></div>
 <p class="abstract">The credit-stress signal of the week is Oracle&rsquo;s force majeure notice on Project Jupiter: the first observed contractual escape hatch being used in a hyperscaler-anchored AI data-center project financing in this dataset.</p>
-<p class="abstract"><em>Revisions box.</em> Two corrections to Issue 1 prose. First, Issue 1&rsquo;s dashboard prose stated balance-sheet debt of $649B; the filed table in the same issue sums to $670.9B (the executive summary&rsquo;s $671B was correct). The error was in prose, not the master table, and is corrected here. Second, the baseline missed the CoreWeave $3.7B converts; recorded this vintage as a new row. No baseline row was edited or deleted.</p>
+<div class="callout"><p class="ct">Revisions to Issue 1</p><p>Two corrections to Issue 1 prose. First, Issue 1&rsquo;s dashboard prose stated balance-sheet debt of $649B; the filed table in the same issue sums to $670.9B (the executive summary&rsquo;s $671B was correct). The error was in prose, not the master table, and is corrected here. Second, the baseline missed the CoreWeave $3.7B converts; recorded this vintage as a new row. No baseline row was edited or deleted.</p></div>
 
 <h2 class="label">Corporate leverage dashboard</h2>
 <div class="cards">
@@ -116,27 +124,37 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 <p class="abstract">Two rows added to the wall. CoreWeave now carries the longest-dated neocloud maturity in the dataset: $20.6B amortizing across 2026&ndash;2030 plus the 2033 bullet. The Switch ABS tranches have no disclosed maturities pre-pricing; unrecorded.</p>
 
 <h2 class="label">Rotating focus: project-finance anatomy, from the CleanSpark indenture</h2>
-<p class="abstract"><strong>1. Repayment is cash-flow-shaped, not calendar-shaped.</strong> Principal amortizes semiannually after the Final Commencement Date in amounts set to hit a target DSCR. If the facility underperforms, amortization slows; the DSCR target governs, not a fixed schedule.</p>
-<p class="abstract"><strong>2. Construction risk sits with the parent.</strong> CleanSpark&rsquo;s completion guarantee funds the issuer as needed to finish Sandersville if note proceeds plus prior equity fall short. Full project risk only after completion; before that, part project paper, part parent credit.</p>
-<p class="abstract"><strong>3. Standard negative-covenant set.</strong> No new debt, restricted payments and investment limits, no liens, no asset sales, no sale-leaseback, no unrelated business, no affiliate transactions, no mergers or asset transfers. No numeric leverage test; control runs through the DSCR amortization and the restricted-payments lockup.</p>
-<p class="abstract"><strong>4. The economics rest on the tenant.</strong> The financing works because a Meta subsidiary signed a 20-year triple-net lease with about $6.6B of contracted base-term payments and a 3% escalator. The lender&rsquo;s collateral is the present value of Meta&rsquo;s promise to pay, plus the facility. Customer-backed project finance: hyperscaler credit underwrites third-party construction debt.</p>
-<p class="abstract">Contrast with the CoreWeave converts in the same vintage: corporate, senior unsecured, fixed-maturity, fixed-coupon, no DSCR shaping, no completion trigger, no project ring-fence. One week produced both archetypes: project cash-flow paper at 7.875% secured, and corporate equity-linked paper at 2.875% unsecured. The pricing gap measures what the market charges for construction and single-asset risk versus diversified corporate credit.</p>
+<h3 class="sub">1. Cash-flow-shaped repayment</h3>
+<p class="abstract">Principal amortizes semiannually after the Final Commencement Date in amounts set to hit a target DSCR. If the facility underperforms, amortization slows; the DSCR target governs, not a fixed schedule.</p>
+<h3 class="sub">2. Construction risk sits with the parent</h3>
+<p class="abstract">CleanSpark&rsquo;s completion guarantee funds the issuer as needed to finish Sandersville if note proceeds plus prior equity fall short. Full project risk only after completion; before that, part project paper, part parent credit.</p>
+<h3 class="sub">3. Negative covenants, no leverage test</h3>
+<p class="abstract">No new debt, restricted payments and investment limits, no liens, no asset sales, no sale-leaseback, no unrelated business, no affiliate transactions, no mergers or asset transfers. No numeric leverage test; control runs through the DSCR amortization and the restricted-payments lockup.</p>
+<h3 class="sub">4. The economics rest on the tenant</h3>
+<p class="abstract">The financing works because a Meta subsidiary signed a 20-year triple-net lease with about $6.6B of contracted base-term payments and a 3% escalator. The lender&rsquo;s collateral is the present value of Meta&rsquo;s promise to pay, plus the facility. Customer-backed project finance: hyperscaler credit underwrites third-party construction debt.</p>
+<h3 class="sub">The contrast: project paper vs corporate paper</h3>
+<p class="abstract">In the same vintage, the CoreWeave converts are corporate, senior unsecured, fixed-maturity, fixed-coupon, no DSCR shaping, no completion trigger, no project ring-fence. One week produced both archetypes: project cash-flow paper at 7.875% secured, and corporate equity-linked paper at 2.875% unsecured. The pricing gap measures what the market charges for construction and single-asset risk versus diversified corporate credit.</p>
 
 <h2 class="label">Stress and transmission watch</h2>
-<table class="datatable">
+<div class="tablewrap"><table class="datatable">
 <tr><th>Signal</th><th>Status</th></tr>
 <tr><td>Project Jupiter force majeure</td><td>First contractual escape hatch used in this dataset. Watch: Blue Owl enforcement, loan clearing levels, whether Oracle capex shifts to 2028 or cancels. Morningstar&rsquo;s ~$25B revenue-at-risk is an analyst estimate, not a filed number.</td></tr>
 <tr><td>CoreWeave converts</td><td>Cheaper money (2.875% vs 8.5&ndash;9.75% stack), more debt (+10.5% pro-forma to ~$38.8B). Revolver DSCR and 6.00x leverage tests remain the nearest covenants.</td></tr>
 <tr><td>Nscale IPO conversion</td><td>Benign if the IPO completes. If not, undisclosed fallback terms decide between a maturity wall and a renegotiation. Coupon undisclosed: debt-service burden cannot be modeled; recorded as a gap.</td></tr>
 <tr><td>Switch ABS pricing</td><td>Record the Class A spread and subordination at pricing: the first fresh data-center ABS datapoint of the program. Wider spreads or thicker subordination than Vantage/CyrusOne would signal tighter structured-credit appetite.</td></tr>
-</table>
+</table></div>
 <p class="abstract">No link in the transmission chain from Issue 1 broke this week. The Jupiter loans quoting below face is a pricing signal, not a default. The dating rule for the first break remains: a missed payment, a covenant waiver request, or a restructuring filing, each dated to its primary document.</p>
 
 <h2 class="label">Methodology and limitations</h2>
-<p class="abstract"><em>Vintages.</em> Append-only, vintage 2026-09-28. Master table: 76 entities, 96 obligations (63 primary, 33 memo), 61 sources. Primary committed credit $4,302.5B, up $10.2B (0.24%) from the $4,292.3B baseline. One economic obligation gets one primary row; the Anviran lease and the Jupiter event are memo. Committed and drawn are distinct facts; every aggregate states its basis.</p>
-<p class="abstract"><em>Ranked gaps.</em> (1) Manager-level AI-infrastructure credit books outside BDC schedules. (2) OpenAI&rsquo;s total debt, leases, purchase obligations, cash and covenants. (3) Anthropic&rsquo;s balance sheet in full. (4) Bank AI exposures beyond SMFG&rsquo;s figure. (5) Incomplete tier ladders for seven borrowers. (6) Nscale&rsquo;s coupon and fallback terms. (7) Switch ABS final pricing, spread and subordination. (8) Project Jupiter facility size and syndicate. (9) The lender-side refinancing calendar. (10) Full circular-financing quantification. New this week: Anviran lease economics beyond the ~$6.6B base-term figure are press-only.</p>
-<p class="abstract"><em>Paywall gaps.</em> PitchBook, Preqin and S&amp;P Capital IQ remain inaccessible. The Bloomberg original on Project Jupiter is paywalled; the program used Reuters and trade-press restatements and labels the source accordingly.</p>
-<p class="abstract"><em>Key sources this vintage.</em> CleanSpark 8-K filed 25 Sep 2026 (acc. 0001193125-26-402944; Items 1.01, 2.03). Nscale $3.36B announcement 25 Sep 2026 via TechCrunch (press tier). Switch ABS Fitch expected ratings 24 Sep 2026 via trade press (press tier). Bloomberg reporting 24 Sep 2026 on the Oracle force majeure via Reuters (press tier). CoreWeave $3.7B converts announcement Sep 2026 via press (press tier; 8-K cross-check pending). Full citations for every figure live in the vintage sources file.</p>
+<h3 class="sub">Vintages</h3>
+<p class="abstract">Append-only, vintage 2026-09-28. Master table: 76 entities, 96 obligations (63 primary, 33 memo), 61 sources. Primary committed credit $4,302.5B, up $10.2B (0.24%) from the $4,292.3B baseline. One economic obligation gets one primary row; the Anviran lease and the Jupiter event are memo. Committed and drawn are distinct facts; every aggregate states its basis.</p>
+<h3 class="sub">Ranked gaps</h3>
+<ol class="takeaways"><li>Manager-level AI-infrastructure credit books outside BDC schedules.</li><li>OpenAI&rsquo;s total debt, leases, purchase obligations, cash and covenants.</li><li>Anthropic&rsquo;s balance sheet in full.</li><li>Bank AI exposures beyond SMFG&rsquo;s figure.</li><li>Incomplete tier ladders for seven borrowers.</li><li>Nscale&rsquo;s coupon and fallback terms.</li><li>Switch ABS final pricing, spread and subordination.</li><li>Project Jupiter facility size and syndicate.</li><li>The lender-side refinancing calendar.</li><li>Full circular-financing quantification.</li></ol>
+<p class="abstract">New this week: the Anviran lease economics beyond the ~$6.6B base-term figure are press-only.</p>
+<h3 class="sub">Paywall gaps</h3>
+<p class="abstract">PitchBook, Preqin and S&amp;P Capital IQ remain inaccessible. The Bloomberg original on Project Jupiter is paywalled; the program used Reuters and trade-press restatements and labels the source accordingly.</p>
+<h3 class="sub">Key sources this vintage</h3>
+<p class="abstract">CleanSpark 8-K filed 25 Sep 2026 (acc. 0001193125-26-402944; Items 1.01, 2.03). Nscale $3.36B announcement 25 Sep 2026 via TechCrunch (press tier). Switch ABS Fitch expected ratings 24 Sep 2026 via trade press (press tier). Bloomberg reporting 24 Sep 2026 on the Oracle force majeure via Reuters (press tier). CoreWeave $3.7B converts announcement Sep 2026 via press (press tier; 8-K cross-check pending). Full citations for every figure live in the vintage sources file.</p>
 
 <h2 class="label">Releases</h2>
 <p class="abstract">Issue 2: Weekly refresh. New issuance, one baseline revision, and the first project-finance stress signal. Vintage 28 September 2026 (data as of 25 September 2026). <a href="reports/ai-leverage-monitor-2026-09-28.pdf">PDF</a>.</p>
@@ -148,6 +166,7 @@ a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
 
 <h2 class="label">Staleness</h2>
 <p class="abstract">Figures are current to the stated vintage. The program refreshes every Monday; the date line above shows the latest vintage. If a refresh is ever missed, the date here will show it.</p>
+
 
 
 </main><footer class="site-footer"><div class="page"><p>Last revised September 2026</p><p>&copy; 2026 Arvin Kilambi</p></div></footer></body></html>
