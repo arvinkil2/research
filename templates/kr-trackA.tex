@@ -1,0 +1,9 @@
+% kr-trackA.tex
+% Track A: scientific, mathematical, physics papers (journal-article structure).
+% A paper's .tex file begins with \input{kr-trackA} as its first line.
+\input{kr-common}
+
+% Track A title-page wrapper. Same arguments as \krtitlepage except the JEL
+% slot is dropped: Track A papers carry no JEL classification.
+% Usage: \krtitlepageA{number}{title}{program}{date}{contactemail}{abstract}{keywords}
+\newcommand{\krtitlepageA}[7]{\krtitlepage{#1}{#2}{#3}{#4}{#5}{#6}{#7}{}}
