@@ -1,0 +1,16 @@
+% kr-trackB.tex
+% Track B: economics and market-research papers (NBER working-paper structure).
+% A paper's .tex file begins with \input{kr-trackB} as its first line.
+\input{kr-common}
+
+\makeatletter
+% Track B only: JEL classification codes for this paper, printed on the
+% title page by \krtitlepageB. Set once in the preamble, e.g. \krjel{E43, G12}.
+\newcommand{\krjel}[1]{\def\kr@jel{#1}}
+\def\kr@jel{}
+
+% Track B title-page wrapper. Same arguments as \krtitlepage except the JEL
+% slot comes from \krjel instead of an argument.
+% Usage: \krtitlepageB{number}{title}{program}{date}{contactemail}{abstract}{keywords}
+\newcommand{\krtitlepageB}[7]{\krtitlepage{#1}{#2}{#3}{#4}{#5}{#6}{#7}{\kr@jel}}
+\makeatother
