@@ -1,0 +1,101 @@
+% kr-common.tex
+% Shared LaTeX preamble for all Kilambi Research papers.
+% One source of truth: every paper's .tex file begins with
+%   \input{kr-trackA}   (scientific/mathematical papers, Track A)
+% or
+%   \input{kr-trackB}   (economics/market-research papers, Track B)
+% as its very first line. Those files \input this file.
+% Do not copy this preamble into individual papers.
+
+\documentclass[11pt]{article}
+
+% Page layout: 1in margins on all sides.
+\usepackage[margin=1in]{geometry}
+
+% Text encoding and fonts. lmodern gives clean vector fonts with T1.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Math.
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Figures and tables.
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% Caption style: bold label, period separator, matches the figure standard
+% ("Figure 1. Short declarative title").
+\usepackage[labelfont=bf,labelsep=period,font=small]{caption}
+
+% Citations: Chicago author-date style via natbib, round brackets.
+% NOTE on the .bst choice: chicago.bst is not installed in this TeX Live
+% distribution (checked with kpsewhich). plainnat.bst is the natbib-native
+% author-date style and the closest available Chicago-style substitute, so
+% it is set here as the single house style. Papers must not issue their own
+% \bibliographystyle; they only call \bibliography{...}.
+\usepackage[authoryear,round]{natbib}
+\bibliographystyle{plainnat}
+
+% Links: no colored boxes, links blend into the text.
+\usepackage[hidelinks]{hyperref}
+
+% Micro-typography: better justification, fewer overfull lines.
+\usepackage{microtype}
+
+% Paragraph style: block paragraphs with vertical space, no indent.
+\setlength{\parskip}{0.6em plus 0.15em minus 0.1em}
+\setlength{\parindent}{0em}
+
+% Table of contents: sections and subsections.
+\setcounter{tocdepth}{2}
+
+% ------------------------------------------------------------------
+% Internal macros use @ in their names, so @ is made a letter here.
+\makeatletter
+% ------------------------------------------------------------------
+% \krtitlepage{number}{title}{program}{date}{contactemail}{abstract}{keywords}{jel}
+% Builds the institutional title page. Renders, in order:
+%   paper number line ("Kilambi Research Working Paper No. KR-WP-2026-0X"),
+%   title, "Kilambi Research" byline, desk line
+%   ("Kilambi Research -- <Program> Program"), contact email, date,
+%   abstract block, keywords line, and a JEL line when #8 is non-empty.
+% No disclaimer footnote. No funding line. Both are excluded by house rule.
+% The title page itself is unnumbered; body pages continue from page 2.
+% ------------------------------------------------------------------
+\newcommand{\krtitlepage}[8]{%
+  \thispagestyle{empty}%
+  \begin{center}
+    {\small\scshape Kilambi Research Working Paper No.\ #1\par}
+    \vspace{2.5em}
+    {\Large\bfseries #2\par}
+    \vspace{1.5em}
+    {\large Kilambi Research\par}
+    \vspace{0.5em}
+    {\normalsize Kilambi Research -- #3 Program\par}
+    \vspace{0.5em}
+    {\normalsize\href{mailto:#5}{#5}\par}
+    \vspace{0.5em}
+    {\normalsize #4\par}
+  \end{center}
+  \vspace{2em}
+  \noindent\textbf{Abstract.} #6\par
+  \vspace{1em}
+  \noindent\textbf{Keywords:} #7\par
+  \def\kr@jelarg{#8}%
+  \ifx\kr@jelarg\empty\else
+    \vspace{0.5em}\noindent\textbf{JEL Classification:} #8\par
+  \fi
+  \clearpage
+}
+
+% ------------------------------------------------------------------
+% \evgrade{Level}{Grade}
+% Unified evidence vocabulary. Level is one of Observed, Reconstructed,
+% Modelled, Assumed. Grade is A, B, or C. Renders as small caps,
+% e.g. \evgrade{Observed}{A} prints (Observed, A).
+% ------------------------------------------------------------------
+\newcommand{\evgrade}[2]{\textsc{(#1, #2)}}
+% ------------------------------------------------------------------
+\makeatother
