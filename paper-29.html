@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Coordination Costs and Break-Even Conditions for Peer-to-Peer Inference of Open-Weight Models, Kilambi Research Working Paper 29." />
+  <title>Coordination Costs and Break-Even Conditions for Peer-to-Peer Inference of Open-Weight Models</title>
+  <style>
+    @font-face{font-family:"Latin Modern Roman";src:url("assets/lmroman10-regular.otf") format("opentype");font-weight:400;font-display:swap}
+    @font-face{font-family:"Latin Modern Roman";src:url("assets/lmroman10-bold.otf") format("opentype");font-weight:700;font-display:swap}
+    :root{color-scheme:light dark;--paper:#fbfbf9;--ink:#171717;--muted:#55534e;--line:#d6d4ce;--link:#173f72;--serif:"Latin Modern Roman",Georgia,"Times New Roman",serif}
+    @media(prefers-color-scheme:dark){:root{--paper:#151515;--ink:#f0efeb;--muted:#c1c0ba;--line:#57554f;--link:#9bbce2}}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.58;font-kerning:normal;text-rendering:optimizeLegibility}a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}.page{width:min(74ch,calc(100% - 64px));margin:0 auto}.back{padding:28px 0 18px;border-bottom:1px solid var(--line);font-size:15px}.record{padding:clamp(40px,7vw,72px) 0 70px}.number,.date{font-size:14px;letter-spacing:.045em;color:var(--muted);font-variant-caps:small-caps}.number{margin:0 0 10px}h1{max-width:28ch;margin:0;font-size:clamp(31px,4.1vw,44px);font-weight:400;line-height:1.14;letter-spacing:-.014em;text-wrap:balance}.byline{margin:18px 0 0}.date{margin:3px 0 18px}.download{margin:0 0 48px}.label{margin:0 0 12px;padding-top:25px;border-top:1px solid var(--line);font-size:17px;font-weight:700}.abstract{margin:0;max-width:68ch;text-wrap:pretty}.abstract p{margin:0 0 14px}.abstract p:last-child{margin-bottom:0}@media(max-width:680px){body{font-size:17px}.page{width:min(100% - 34px,74ch)}.back{padding-top:22px}.record{padding:34px 0 50px}h1{font-size:30px}.download{margin-bottom:38px}}@media print{@page{margin:18mm}:root{--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--link:#000}.page{width:100%}.back{display:none}.record{padding-top:0}}
+  </style>
+</head>
+<body>
+  <div class="back page"><a href="./" aria-label="Back to working papers">Working papers</a></div>
+  <main class="record page">
+    <p class="number">Working Paper 29</p>
+    <h1>Coordination Costs and Break-Even Conditions for Peer-to-Peer Inference of Open-Weight Models</h1>
+    <p class="byline">Kilambi Research</p>
+    <p class="date">October 2026</p>
+    <p class="download"><a href="papers/peer-to-peer-inference.pdf" download="peer-to-peer-inference.pdf">Download PDF</a></p>
+    <h2 class="label">Abstract</h2>
+    <div class="abstract">
+      <p>This paper asks whether an opt-in network of consumer devices can serve open-weight language models at interactive speed and at a cost competitive with centralized serving. Five coordination designs are compared in a single accounting framework: centralized serving (A0), whole-request routing to full replicas on peers (A1), layer sharding across peers (A2), speculative decoding with a local draft and a sharded verifier (A3), and sparse mixture-of-experts serving in which the model itself is dispersed across devices, in both its standard per-layer form (A4N) and a restructured form with locality routing, expert caching, and early exit (A4R). Closed-form latency and cost expressions are derived for each design and tested in a discrete-event simulator that first reproduces the closed forms exactly in noiseless runs.</p>
+      <p>Sharding never beats a smaller model run on the requester&rsquo;s own device at any tested wide-area round-trip time. Speculative decoding raises mean throughput but converts steady latency into bursty latency, and its break-even acceptance rate falls as round-trip time rises, from 0.42 at a 10 ms round trip to 0.17 at 150 ms. Replica routing on peers undercuts centralized cost only when centralized utilization is below a measured crossover of 0.28. Per-layer expert routing fails by two to three orders of magnitude on wide-area links. The restructured sparse design meets a 50 ms interactive target only within a single city and only at low sequential depth. When the fleet grows at fixed depth, the binding scaling term is the decay of cache coverage, not queueing. All quantitative results are (Modelled, C); no hardware was measured.</p>
+    </div>
+  </main>
+</body>
+</html>
